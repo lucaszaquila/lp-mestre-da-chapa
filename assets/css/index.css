@@ -198,18 +198,18 @@ section:nth-child(odd) {
 
 /* Seção Quest 2 */
 .quest-2 .title-date-text {
-    grid-area: 'cell1';
+    grid-area: cell1;
 }
 
 .quest-2 ul {
     list-style-type: '+';
     font-size: 2em;
 
-    grid-area: 'cell2';
+    grid-area: cell2;
 }
 
 .quest-2 .column-4 {
-    grid-area: 'cell3';
+    grid-area: cell3;
 }
 
 .quest-2 ul li + li {
