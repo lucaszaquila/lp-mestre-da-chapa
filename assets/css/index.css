@@ -342,4 +342,9 @@ footer .go-up img {
     .scroller-container {
         max-width: 90%;
     }
+
+    footer .go-up {
+        transform: scale(.8);
+        position: static;
+    }
 }
