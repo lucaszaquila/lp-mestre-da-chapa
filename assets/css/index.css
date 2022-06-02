@@ -30,10 +30,6 @@ h1, h2, h3, h4, h5, h6, strong {
     font-weight: 700;
 }
 
-button { 
-    cursor: pointer;
-}
-
 a {
     color: inherit;
     text-decoration: none;
@@ -147,6 +143,7 @@ section:nth-child(odd) {
     color: var(--grey-200);
     font-size: 2em;
     font-weight: 500;
+    text-align: center;
 }
 
 .feature > span {
@@ -216,6 +213,7 @@ section:nth-child(odd) {
     padding-top: 1em;
 }
 
+/* Seção regulamento */
 .scroller-container {
     background-color: var(--black);
     padding: 2em;
@@ -271,4 +269,30 @@ footer > div {
     display: flex;
     align-items: center;
     gap: 1.5em;
+}
+
+@media screen and (max-width: 700px) {
+    .column-2, .column-3{
+        grid-template-columns: 1fr;
+    }
+
+    .column-3 {
+        grid-template-areas: 
+        "cell1"
+        "cell2"
+        "cell3";
+    }
+
+    .column-4 {
+        flex-wrap: wrap;
+    }
+
+    .feature div {
+        justify-content: center;
+        margin: 2em 0;
+    }
+
+    .scroller-container {
+        max-width: 90%;
+    }
 }
