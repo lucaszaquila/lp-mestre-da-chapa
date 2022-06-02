@@ -143,6 +143,14 @@ section:nth-child(odd) {
 }
 
 /* Seção Destaques */
+.feature {
+    min-height: calc(100vh - 70px);
+}
+
+.feature .hero {
+    width: 65%;
+}
+
 .feature h1 {
     color: var(--grey-200);
     font-size: 2em;
@@ -306,7 +314,7 @@ footer .go-up img {
         contrast(100%);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
     .column-2, .column-3{
         grid-template-columns: 1fr;
     }
@@ -320,6 +328,10 @@ footer .go-up img {
 
     .column-4 {
         flex-wrap: wrap;
+    }
+
+    .feature .hero {
+        width: 100%;
     }
 
     .feature div {
