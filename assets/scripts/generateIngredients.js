@@ -1,63 +1,41 @@
-const abilities = [
-    { name: "Javascript", level: "advanced" },
-    { name: "HTML", level: "advanced" },
-    { name: "CSS", level: "advanced" },
-    { name: "React", level: "advanced" },
-    { name: "Vue", level: "regular" },
-    { name: "Next.js", level: "advanced" },
-    { name: "HTML", level: "advanced" },
-    { name: "Angular", level: "regular" },
-    { name: "NestJS", level: "beginner" },
-    { name: "Sass", level: "advanced" },
-    { name: "Less", level: "advanced" },
-    { name: "React Native", level: "regular" },
+const ingredients = [
+    { name: "Pão", url:"pao.jpg" },
+    { name: "Carne", url: "burguer.webp" },
+    { name: "Queijo Mussarela", url: "mussarela.webp" },
+    { name: "Queijo Cheddar", url: "cheddar.jpg" },
+    { name: "Gorgonzola", url: "gorgonzola.jpeg" },
+    { name: "Cebola Frita", url: "cebola-frita.webp" },
+    { name: "Cebola Caramelizada", url: "cebola-caramelizada.jpg" },
+    { name: "Bacon", url: "bacon.jpg" },
+    { name: "Alface", url: "alface.webp" },
+    { name: "Tomate", url: "tomate.jpg" },
+    { name: "Cebola Roxa", url: "cebola-roxa.webp" },
+    { name: "Vinagrete", url: "vinagrete.jpg" },
+    { name: "Hamburguer de Frango", url:"burguer-frango.webp" },
+    { name: "Azeite", url:"azeite.jpg" },
+    { name: "Maionese Verde", url:"maionese-verde.jpg" },
+    { name: "Maionese de Bacon", url:"maionese-bacon.webp" },
+    { name: "Maionese Aioli", url:"maionese-aioli.jpg" },
+    { name: "Molho de Sriracha", url:"sriracha.jpg" },
+    { name: "Cheddar Creme", url:"cheddar-creme.webp" },
+    { name: "Hamburguer do Futuro (Vegetariano)", url:"burguer-veg.jpg" },
+    { name: "Picles", url:"picles.webp" },
+    { name: "Alho Frito", url:"alho-frito.jpg" },
+    { name: "Molho Barbecue", url:"barbecue.webp" },
 ];
 
-function Abilities() {
-    const principalSkills = abilities.slice(0, 5);
-    const renderPrincipalSkills = principalSkills.map(({ name, level }) => (
-        <div className="grid grid-cols-2 gap-4" key={name}>
-            <div className="col-span-1">{name}</div>
-            <div className="col-span-1 text-right capitalize">{level}</div>
-            <div className="col-span-2">
-                <div
-                    className="w-full relative h-8 rounded-lg bg-black overflow-hidden"
-                    style={{
-                        background: "var(--bg-color)",
-                        boxShadow: "var(--shadow)",
-                    }}
-                >
-                    <div
-                        className={`${levels[level]} h-full absolute inset-0`}
-                        style={{
-                            background:
-                                "linear-gradient(270deg, var(--secondary), var(--primary))",
-                        }}
-                    ></div>
-                </div>
-            </div>
+function Ingredients() {
+    const renderIngredients = ingredients.map(({ name, url }) => (
+        <div className="ingredient" key={name}>
+            <img src={`./assets/img/ingredients/${url}`} />
+            <div>{name}</div>
         </div>
     ));
-
-    return <>{renderPrincipalSkills}</>;
+        
+    return <>{renderIngredients}</>;
 }
 
-function MoreAbilities() {
-    const secundarySkills = abilities.slice(5);
-
-    const renderSecundarySkills = secundarySkills.map(({ name }) => (
-        <li className="list-disc" key={name}>
-            {name}
-        </li>
-    ));
-    return <>{renderSecundarySkills}</>;
-}
-
-const container = document.getElementById("abilities");
-const containerMoreAbilities = document.getElementById("more_abilities");
+const container = document.getElementById("ingredients");
 
 const root = ReactDOM.createRoot(container);
-root.render(<Abilities />);
-
-const more_abilities = ReactDOM.createRoot(containerMoreAbilities);
-more_abilities.render(<MoreAbilities />);
+root.render(<Ingredients />);
