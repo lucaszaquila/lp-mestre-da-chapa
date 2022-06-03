@@ -101,6 +101,7 @@ section:nth-child(odd) {
     display: grid;
     grid-template-columns: repeat(4, 200px);
     align-content: center;
+    justify-items: center;
     justify-content: center;
     gap: 50px;
     grid-area: cell3;
@@ -294,6 +295,7 @@ section:nth-child(odd) {
     font-weight: 700;
     font-size: 1.2em;
     padding: .5em;
+    cursor: default;
 
     position: absolute;
     top: 0;
@@ -403,16 +405,21 @@ footer .go-up img {
 
 @media screen and (max-width: 1280px) {
     .column-6 {
-        grid-template-columns: repeat(4, 150px);
+        grid-template-columns: repeat(auto-fill, 200px);
     }
 
-    .column-5 {
-        grid-template-columns: repeat(auto-fill, 200px);
+    .column-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .burguer {
+        width: 250px;
+        height: 250px;
     }
 }
 
 @media screen and (max-width: 720px) {
-    .column-2, .column-3{
+    .column-2, .column-3, .column-4{
         grid-template-columns: 1fr;
     }
 
@@ -421,18 +428,6 @@ footer .go-up img {
         "cell1"
         "cell2"
         "cell3";
-    }
-
-    .column-4 {
-        flex-wrap: wrap;
-    }
-
-    .column-6 {
-        grid-template-columns: repeat(auto-fill, 150px);
-    }
-
-    .column-5 {
-        grid-template-columns: repeat(auto-fill, 200px);
     }
 
     .feature .hero {
