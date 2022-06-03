@@ -6,7 +6,13 @@
     --grey-100: #D9D9D9;
     --white: #FFFFFF;
 
+    --red-400: #be0506;
     --red-500: #A10A0B;
+}
+
+@font-face {
+    font-family: templarshield;
+    src: url(../font/templarshield.ttf);
 }
 
 * {
@@ -159,9 +165,11 @@ section:nth-child(odd) {
 }
 
 .feature > span {
-    font-size: 2.2em;
-    font-weight: 500;
+    font-size: 5em;
+    font-weight: 700;
+    color: var(--red-400);
     font-style: italic;
+    font-family: 'templarshield';
 }
 
 .feature div {

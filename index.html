@@ -18,12 +18,13 @@
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script
-        src="/assets/scripts/generateCards.js"
-        type="text/babel"
-    ></script>
+    
+    <!-- Scripts -->
+    <script src="./assets/scripts/generateCards.js" type="text/babel"></script>
+    <script src="./assets/scripts/carousel.js"></script>
 
     <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/carousel.css">
     <link rel="preload" as="image" href="./assets/img/mestredachapa.png">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
 </head>
@@ -37,7 +38,7 @@
     <section>
         <div class="container feature">
             <img class="hero" src="./assets/img/mestredachapa.png" alt="Mestre de Chapa">
-            <h1>Seja o Mestre da chapa e ganhe</h1>
+            <h1>Seja o Mestre da chapa e ganhe:</h1>
             <span>R$ 9.000</span>
     
             <div>
@@ -132,17 +133,35 @@
                 </p>
             </div>
     
-            <img src="#" alt="Imagem Celebração">
+            <div class="slideshow-container">
+                <div class="guest fade">
+                    <img src="./assets/img/guests/blackoutz.jpg">
+                    <div class="text">Balckoutz</div>
+                </div>
+            
+                <div class="guest fade">
+                    <img src="./assets/img/guests/nicks.webp">
+                    <div class="text">Nicks</div>
+                </div>
+            
+                <div class="guest fade">
+                    <img src="./assets/img/guests/stolen.jpg">
+                    <div class="text">Stolen</div>
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
         </div>
     </section>
        
-    <section>
+    <!-- <section>
         <div class="container column-2">
             <h2>Participantes</h2>
 
             <iframe src="https://www.tiktok.com/tag/minhareceita?is_from_webapp=1&sender_device=pc" frameborder="0"></iframe>
         </div>
-    </section>
+    </section> -->
 
     <section>
         <div class="container">
