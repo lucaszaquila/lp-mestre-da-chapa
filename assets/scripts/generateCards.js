@@ -22,20 +22,38 @@ const ingredients = [
     { name: "Picles", url:"picles.webp" },
     { name: "Alho Frito", url:"alho-frito.jpg" },
     { name: "Molho Barbecue", url:"barbecue.webp" },
+    { name: "Catchup, Mostarda, Maionese", url:"catchup-mostarda-maionese.webp" },
 ];
 
-function Ingredients() {
-    const renderIngredients = ingredients.map(({ name, url }) => (
-        <div className="ingredient" key={name}>
-            <img src={`./assets/img/ingredients/${url}`} />
+const burguers = [
+    { name: "Torre de Sauron", url:"torre.png" },
+    // { name: "Beholder", url:"beholder.png" },
+    { name: "Shangi Chi e os 10 Aneis", url:"shangchi.png" },
+    { name: "Venom", url:"venom.png" },
+    { name: "Peppa Burguer", url:"peppa.png" },
+    { name: "Samurai X", url:"samurai.png" },
+    { name: "Midoriya Burguer", url:"midoryia.png" },
+    // { name: "O Espantalho", url:"espantalho.png" },
+    { name: "Cebolethanos", url:"thanos.png" },
+    { name: "Ham Vader", url:"vader.png" },
+];
+
+function Card({array, type = 'ingredient'}) {
+    const renderCard = array.map(({name, url}) => (
+        <div className={type} key={name}>
+            <img src={`./assets/img/${type}/${url}`} />
             <div>{name}</div>
         </div>
     ));
         
-    return <>{renderIngredients}</>;
+    return <>{renderCard}</>;
 }
 
-const container = document.getElementById("ingredients");
+const containerIngredients = document.getElementById("ingredients");
+const containerBurguers = document.getElementById("burguers");
 
-const root = ReactDOM.createRoot(container);
-root.render(<Ingredients />);
+const rootIngredients = ReactDOM.createRoot(containerIngredients);
+const rootBurguers = ReactDOM.createRoot(containerBurguers);
+
+rootIngredients.render(<Card array={ingredients} />);
+rootBurguers.render(<Card array={burguers} type="burguer" />);  
