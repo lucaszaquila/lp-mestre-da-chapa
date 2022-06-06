@@ -324,7 +324,7 @@ section:nth-child(odd) {
 
 /* Seção regulamento */
 .scroller-container {
-    background-color: var(--black);
+    background-color: var(--grey-500);
     padding: 2em;
     padding-right: .5em;
     border-radius: 10px;
