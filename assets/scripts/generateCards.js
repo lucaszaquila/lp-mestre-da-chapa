@@ -26,16 +26,16 @@ const ingredients = [
 ];
 
 const burguers = [
-    { name: "Torre de Sauron", url:"torre.png" },
-    // { name: "Beholder", url:"beholder.png" },
-    { name: "Shangi Chi e os 10 Aneis", url:"shangchi.png" },
-    { name: "Venom", url:"venom.png" },
-    { name: "Peppa Burguer", url:"peppa.png" },
-    { name: "Samurai X", url:"samurai.png" },
-    { name: "Midoriya Burguer", url:"midoryia.png" },
-    // { name: "O Espantalho", url:"espantalho.png" },
-    { name: "Cebolethanos", url:"thanos.png" },
-    { name: "Ham Vader", url:"vader.png" },
+    { name: "Torre de Sauron", url:"torre.png", ref:"Cabana Burguer" },
+    // { name: "Beholder", url:"beholder.png", ref:"Bom Apetite" },
+    { name: "Shangi Chi e os 10 Aneis", url:"shangchi.png", ref:"Caseirinho Burguer" },
+    { name: "Venom", url:"venom.png", ref:"Brewdog" },
+    { name: "Peppa Burguer", url:"peppa.png", ref:"Freepik" },
+    { name: "Samurai X", url:"samurai.png", ref:"Condessa Café"},
+    { name: "Midoriya Burguer", url:"midoryia.png", ref:"I Love Burger" },
+    // { name: "O Espantalho", url:"espantalho.png", ref:"Smoked Burgers" },
+    { name: "Cebolethanos", url:"thanos.png", ref:"Tigre Cego" },
+    { name: "Ham Vader", url:"vader.png", ref:"Wings Burger & CO"},
 ];
 
 function Card({array, type = 'ingredient'}) {
