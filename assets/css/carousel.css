@@ -31,6 +31,10 @@
     background-image: url(../img/cod.png);
 }
 
+.guest .game.cod + img{
+    object-position: right;
+}
+
 .guest .game.fortnite {
     background-image: url(../img/fortnite.png);
 }

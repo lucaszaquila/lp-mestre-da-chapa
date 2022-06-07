@@ -14,13 +14,12 @@
     border-radius: 5px;
     border: 3px solid var(--grey-400);
     position: relative;
-    transform: skewX(5deg);
 }
 
 .card img {
     height: 350px;
     width: 100%;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 2px 2px 0px 0px;
 
     object-fit: cover;
 }
@@ -39,6 +38,10 @@
 
 .card .game.cod {
     background-image: url(../../img/cod.png);
+}
+
+.card .game.cod + img {
+    object-position: right;
 }
 
 .card .game.fortnite {
