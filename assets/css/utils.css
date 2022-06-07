@@ -1,0 +1,96 @@
+.container {
+    padding: 2em;
+    max-width: 1300px;
+    margin: 0 auto;
+    min-height: 100vh;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.column-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.column-3 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "cell1 cell2"
+        "cell3 cell3";
+    gap: 50px;
+}
+
+.column-4 {
+    width: 100%;
+    margin: 20px 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 50px;
+    grid-area: cell3;
+}
+
+.column-6 {
+    margin: 20px 0;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.hero {
+    width: 100%;
+    max-width: 950px;
+}
+
+/* Bloco com titulo e texto */
+.title-date-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title-date-text h2 {
+    font-size: 3em;
+}
+
+.title-date-text > span {
+    color: var(--grey-400);
+    font-size: 2em;
+}
+
+.title-date-text p > span {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1280px) {
+    .column-6 {
+        grid-template-columns: repeat(auto-fill, 200px);
+    }
+
+    .column-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .column-2,
+    .column-3,
+    .column-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .column-3 {
+        grid-template-areas:
+            "cell1"
+            "cell2"
+            "cell3";
+    }
+}

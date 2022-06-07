@@ -1,0 +1,53 @@
+/* Seção Jornada */
+.journey h2,
+.journey h3 {
+    text-align: center;
+}
+
+.journey h3 {
+    font-size: 2em;
+}
+
+.journey > div {
+    width: 100%;
+}
+
+.ingredient {
+    height: 150px;
+    position: relative;
+}
+
+.ingredient img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.ingredient > div {
+    width: 100%;
+    height: 100%;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: default;
+    opacity: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    transition: opacity 0.5s ease-in;
+}
+
+.ingredient div:hover {
+    opacity: 1;
+}
