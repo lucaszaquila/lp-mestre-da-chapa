@@ -41,7 +41,7 @@ const burguers = [
 function Card({array, type = 'ingredient'}) {
     const renderCard = array.map(({name, url}) => (
         <div className={type} key={name}>
-            <img src={`./assets/img/${type}/${url}`} />
+            <img src={`./assets/img/${type}/${url}`} alt={name} />
             <div>{name}</div>
         </div>
     ));
