@@ -322,6 +322,63 @@ section:nth-child(odd) {
    opacity: 1;
 }
 
+/* Seção Boss */
+.bosses {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    align-items: center;
+    gap: 2em;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    background-color: var(--grey-500);
+    border-radius: 5px;
+    border: 2px solid var(--grey-400);
+    position: relative;
+    transform: skewX(5deg);
+}
+
+.card img {
+    height: 350px;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+
+    object-fit: cover;
+}
+
+.card .game {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin: auto;
+
+    position: absolute;
+    top: -25px;
+    right: 0;
+    left: 0;
+}
+
+.card .game.cod {
+    background-image: url(../img/cod.png);
+}
+
+.card .game.fortnite {
+    background-image: url(../img/fortnite.png);
+}
+
+.card span {
+    display: block;
+    width: 100%;
+    font-size: 3em;
+    font-family: "templarshield";
+    text-align: center;
+    color: var(--grey-400);
+    padding: 10px 0;
+}
+
 /* Seção regulamento */
 .scroller-container {
     background-color: var(--grey-500);
@@ -426,7 +483,7 @@ footer .go-up img {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
     .column-2, .column-3, .column-4{
         grid-template-columns: 1fr;
     }
@@ -447,6 +504,10 @@ footer .go-up img {
         margin: 2em 0;
     }
 
+    .bosses {
+        display: none;
+    }
+
     .scroller-container {
         max-width: 90%;
     }
@@ -456,3 +517,4 @@ footer .go-up img {
         position: static;
     }
 }
+
