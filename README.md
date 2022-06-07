@@ -1,6 +1,6 @@
 # Landing Page
 ## Mestre da Chapa
 
-Click [here](lucaszaquila.github.io/lp-mestre-da-chapa) to see the page.
+Click [here](https://lucaszaquila.github.io/lp-mestre-da-chapa) to see the page.
 
-Clique [aqui](lucaszaquila.github.io/lp-mestre-da-chapa) para ver a pagina.
+Clique [aqui](https://lucaszaquila.github.io/lp-mestre-da-chapa) para ver a pagina.
