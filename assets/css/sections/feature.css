@@ -73,15 +73,16 @@
     }
 
     .feature .money-container > span {
-        gap: 2rem;
+        gap: .5rem;
     }
 
-    .feature .money-container > span > img:last-child {
-        display: none;
+    .feature .money-container > span > img {
+        height: 2rem;
+        width: 2rem;
     }
 
     .feature div {
         justify-content: center;
-        margin: 2em 0;
+        margin: .5em 0;
     }
 }

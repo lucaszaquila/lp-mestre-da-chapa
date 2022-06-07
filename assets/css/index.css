@@ -5,6 +5,7 @@
 @import url(./global.css);
 @import url(./sections/journey.css);
 @import url(./sections/quest.css);
+@import url(./sections/master.css);
 @import url(./utils.css);
 
 :root {
