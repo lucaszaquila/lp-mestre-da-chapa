@@ -12,7 +12,7 @@
     width: 100%;
     background-color: var(--grey-500);
     border-radius: 5px;
-    border: 2px solid var(--grey-400);
+    border: 3px solid var(--grey-400);
     position: relative;
     transform: skewX(5deg);
 }
