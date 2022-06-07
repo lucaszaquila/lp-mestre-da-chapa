@@ -2,7 +2,7 @@
 
 /* Seção Destaques */
 
-.feature {
+.container.feature {
     min-height: calc(100vh - 70px);
 }
 
@@ -27,11 +27,12 @@
 .feature .money-container > span {
     display: inline-flex;
     align-items: center;
-    gap: 4rem;
+    justify-items: center;
+    gap: 1rem;
     font-size: 5rem;
     font-weight: 700;
-    /* color: var(--red-400); */
-    font-style: italic;
+    color: #1A652A;
+    /* font-style: italic; */
     /* font-family: "templarshield"; */
 }
 
@@ -45,6 +46,7 @@
 .feature .money-container > span > img {
     width: 3rem;
     height: 3rem;
+    filter: invert(86%) sepia(29%) saturate(4723%) hue-rotate(341deg) brightness(103%) contrast(87%);
 }
 
 .feature div.feature-footer {
