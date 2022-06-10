@@ -57,9 +57,17 @@
     width: 85%;
 }
 
+.container.regulamento {
+    min-height: 0;
+}
+
+.regulamento h2 {
+    font-size: 2em;
+}
+
 /* Seção regulamento */
 .scroller-container {
-    background-color: var(--grey-500);
+    background-color: var(--black);
     padding: 2em;
     padding-right: 0.5em;
     border-radius: 10px;

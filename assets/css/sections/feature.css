@@ -2,7 +2,8 @@
 
 /* Seção Destaques */
 
-.feature {
+section:first-child {
+    width: 100%;
     background-image: url(../../img/alt/bg.png);
     background-size: cover;
     background-position: bottom center;
@@ -17,8 +18,7 @@
 }
 
 .feature .hero {
-    width: 45%;
-    position: relative;
+    width: 65%;
 }
 
 .rewards {
