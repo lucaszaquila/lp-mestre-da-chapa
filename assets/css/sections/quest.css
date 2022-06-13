@@ -18,6 +18,12 @@
     padding-top: 1em;
 }
 
+.quest-2 ul li{
+    font-family: 'templarshield';
+    font-weight: 400;
+    font-size: 4rem;
+}
+
 .burguer {
     position: relative;
     height: 200px;

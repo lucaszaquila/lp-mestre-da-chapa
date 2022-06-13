@@ -48,6 +48,17 @@
     font-weight: 700;
 }
 
+section.graphite {
+    width: 100%;
+    background-image: url(../img/alt/bg.png);
+    background-size: cover;
+    background-position: bottom center;
+}
+
+section.graphite.top {
+    background-position: top center;
+}
+
 /* Seção Sobre */
 .about.container {
     gap: 80px;
@@ -55,6 +66,10 @@
 
 .about .hero {
     width: 85%;
+}
+
+.master .hero {
+    border-radius: 5px;
 }
 
 .container.regulamento {

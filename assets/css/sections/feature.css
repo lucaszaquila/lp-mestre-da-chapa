@@ -2,11 +2,8 @@
 
 /* Seção Destaques */
 
-section:first-child {
-    width: 100%;
-    background-image: url(../../img/alt/bg.png);
-    background-size: cover;
-    background-position: bottom center;
+.feature.container{
+    padding: 2rem;
 }
 
 .feature > a {

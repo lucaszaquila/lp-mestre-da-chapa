@@ -5,7 +5,9 @@
 }
 
 .journey h3 {
-    font-size: 2em;
+    font-family: 'templarshield';
+    font-weight: 400;
+    font-size: 3rem;
 }
 
 .journey > div {
@@ -23,7 +25,6 @@
     object-fit: cover;
     object-position: center;
     border-radius: 5px;
-    border: 3px solid var(--grey-400);
 }
 
 .ingredient > div {
