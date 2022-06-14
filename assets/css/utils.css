@@ -87,6 +87,7 @@
     .column-3,
     .column-4 {
         grid-template-columns: 1fr;
+        gap: 4rem;
     }
 
     .column-3 {

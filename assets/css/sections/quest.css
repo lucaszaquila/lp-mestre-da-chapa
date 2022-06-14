@@ -37,7 +37,6 @@
     object-position: center;
     border-radius: 100%;
     transform: scale(1);
-    border: 3px solid var(--grey-400);
 
     transition: transform 0.5s ease-out, filter 0.5s ease-in;
 }
@@ -53,9 +52,10 @@
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.2em;
+    font-weight: 400;
+    font-size: 3rem;
     padding: 0.5em;
+    font-family: 'templarshield';
     cursor: default;
 
     position: absolute;
@@ -68,9 +68,10 @@
 
 .burguer > div span{
     display: block;
-    font-size: .7em;
+    font-size: 1rem;
     text-transform: capitalize;
     color: var(--grey-200);
+    font-family: 'ubuntu';
 
 }
 
