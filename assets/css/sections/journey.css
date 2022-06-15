@@ -1,4 +1,8 @@
 /* Seção Jornada */
+.journey.container {
+    gap: 50px;
+}
+
 .journey h2,
 .journey h3 {
     text-align: center;
@@ -30,7 +34,7 @@
 .ingredient > div {
     width: 100%;
     height: 100%;
-    padding: 0.5em;
+    padding: 1.5rem;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     text-transform: uppercase;

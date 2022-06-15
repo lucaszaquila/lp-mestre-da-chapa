@@ -65,7 +65,7 @@
 
 .title-date-text > span {
     color: var(--grey-400);
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .title-date-text p > span {

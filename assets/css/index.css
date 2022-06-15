@@ -70,8 +70,8 @@ section.graphite.top {
 
 .master .hero {
     border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 20px 5px rgba(190,5,6,0.6); 
-    box-shadow: 0px 0px 20px 5px rgba(190,5,6,0.6);
+    -webkit-box-shadow: 0px 0px 20px 5px black; 
+    box-shadow: 0px 0px 20px 5px var(--black);
 }
 
 .container.regulamento {
@@ -79,14 +79,14 @@ section.graphite.top {
 }
 
 .regulamento h2 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 /* Seção regulamento */
 .scroller-container {
     background-color: var(--black);
     padding: 2em;
-    padding-right: 0.5em;
+    padding-right: 0.5rem;
     border-radius: 10px;
     max-width: 80%;
 }
@@ -94,7 +94,7 @@ section.graphite.top {
 .scroller {
     max-height: 400px;
     overflow-y: scroll;
-    padding-right: 1.5em;
+    padding-right: 1.5rem;
 }
 
 @media screen and (max-width: 900px) {

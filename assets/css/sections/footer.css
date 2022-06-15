@@ -1,16 +1,12 @@
 /* Footer */
 footer {
     position: relative;
-    padding: 2em;
+    padding: 2rem;
 
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 2rem;
     align-items: center;
-}
-
-footer img {
-    width: 2 00px;
 }
 
 footer ul {
@@ -21,13 +17,13 @@ footer ul {
 }
 
 footer span {
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 footer > div {
     display: flex;
     align-items: center;
-    gap: 1.5em;
+    gap: 1.5rem;
 }
 
 footer .go-up {
@@ -38,7 +34,7 @@ footer .go-up {
     border-radius: 100%;
 
     position: absolute;
-    right: 2em;
+    right: 2rem;
     bottom: 50%;
 
     display: flex;
@@ -51,6 +47,7 @@ footer .go-up img {
     filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(284%)
         hue-rotate(41deg) brightness(116%) contrast(100%);
 }
+
 @media screen and (max-width: 900px) {
     footer .go-up {
         transform: scale(0.8);

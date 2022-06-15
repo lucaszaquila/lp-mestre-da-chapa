@@ -66,6 +66,7 @@
     text-align: center;
     text-transform: uppercase; 
     font-weight: 300;
+    line-height: normal;
 
     grid-column: 2;
 }
@@ -82,7 +83,7 @@
 
 @media screen and (max-width: 570px) {
     .rewards {
-        font-size: 1rem;
+        grid-template-columns: 80px 1fr;
     }
 
     .rewards p {
