@@ -1,16 +1,3 @@
-::-webkit-scrollbar {
-    width: 7px;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--red-500);
-    border-radius: 10px;
-}
-
 * {
     margin: 0px;
     padding: 0px;
@@ -56,6 +43,59 @@ a {
 
 p {
     line-height: 1.5rem;
+}
+
+:root {
+    --black: #000000;
+    --grey-500: #1a1a1a;
+    --grey-400: #888888;
+    --grey-200: #c4c4c4;
+    --grey-100: #d9d9d9;
+    --white: #ffffff;
+
+    --red-400: #be0506;
+    --red-500: #a10a0b;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--red-500);
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family: templarshield;
+    src: url(../font/templarshield.ttf);
+}
+
+@font-face {
+    font-family: organetto;
+    src: url(../font/Organetto-Regular.ttf);
+}
+
+@font-face {
+    font-family: organetto;
+    src: url(../font/Organetto-Thin.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: organetto;
+    src: url(../font/Organetto-Bold.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: organetto;
+    src: url(../font/Organetto-UltraBold.ttf);
+    font-weight: 700;
 }
 
 @media (min-width: 1440px) {

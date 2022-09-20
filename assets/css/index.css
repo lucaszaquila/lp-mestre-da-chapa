@@ -8,46 +8,6 @@
 @import url(./sections/master.css);
 @import url(./utils.css);
 
-:root {
-    --black: #000000;
-    --grey-500: #1a1a1a;
-    --grey-400: #888888;
-    --grey-200: #c4c4c4;
-    --grey-100: #d9d9d9;
-    --white: #ffffff;
-
-    --red-400: #be0506;
-    --red-500: #a10a0b;
-}
-
-@font-face {
-    font-family: templarshield;
-    src: url(../font/templarshield.ttf);
-}
-
-@font-face {
-    font-family: organetto;
-    src: url(../font/Organetto-Regular.ttf);
-}
-
-@font-face {
-    font-family: organetto;
-    src: url(../font/Organetto-Thin.ttf);
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: organetto;
-    src: url(../font/Organetto-Bold.ttf);
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: organetto;
-    src: url(../font/Organetto-UltraBold.ttf);
-    font-weight: 700;
-}
-
 section.graphite {
     width: 100%;
     background-image: url(../img/alt/bg.png);
@@ -88,7 +48,7 @@ section.graphite.top {
     padding: 2em;
     padding-right: 0.5rem;
     border-radius: 10px;
-    max-width: 80%;
+    max-width: 50%;
 }
 
 .scroller {
